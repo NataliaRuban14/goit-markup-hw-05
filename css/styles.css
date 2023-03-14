@@ -678,17 +678,20 @@
     align-items: center;
     justify-content: center;
     margin-left: auto;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon {
+    fill: var(--title-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:is(:hover, :focus) {
     background: var(--accent-port-color);
 }
 
-.modal-icon {
-    fill: var(--title-text-color);
-}
-
-.modal-icon:is(:hover, :focus) {
+.modal-close:is(:hover, :focus) .modal-icon {
     fill: var(--primary-white-color);
 }
 
@@ -727,7 +730,7 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
